@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(background-home-desktop.jpg) ;
+    background-size: cover;
+}
+#nav {
+    float: right;
+    text-align: right;
+    opacity: 0.7;
+    background-color: rgb(68, 77, 107);
+    margin-right: 6rem;
+}
+#nav ul li{
+    display: inline-block;
+    padding: 1rem;
+    /* border: 3px solid grey; */
+
+}
+#nav ul li a{
+    text-decoration: none; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+#h{
+    text-decoration: underline;
+    color: white;
+}
+
+.content{
+           position: absolute;
+           margin-top: 12rem;
+           margin-left: 4rem;
+           color: white;
+}
+#upper{
+    font-size: 3rem;
+    opacity: 0.7;
+}
+#space{
+    font-size: 7rem;
+    margin: 9px;
+}
+#base{
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.explore{
+    height: 15rem;
+    width: 15rem;
+    background-color: white;
+    border-radius: 100%;
+     margin-top: 22rem;
+     float: right;
+     margin-left: 62rem;
+     position: absolute;
+}
+#text{
+
+  text-align: center;
+    font-size: xx-large;
+    margin-top: 6rem;
+
+}

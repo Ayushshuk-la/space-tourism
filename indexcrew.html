@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREW</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(background-crew-desktop.jpg) ;
+    background-size: cover;
+    color: white;
+}
+#nav {
+    float: right;
+    text-align: right;
+    opacity: 0.7;
+    background-color: rgb(68, 77, 107);
+    margin-right: 6rem;
+}
+#nav ul li{
+    display: inline-block;
+    padding: 1rem;
+    /* border: 3px solid grey; */
+
+}
+#nav ul li a{
+    text-decoration: none; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+#c{
+    text-decoration: underline;
+    color: white;
+}
+
+.pick h2{
+    
+    margin-top: 7rem;
+    margin-left: 4rem;
+    position: absolute;
+}
+.slider{
+    position: absolute;
+    margin-top: 12rem;
+    margin-left: 11rem;
+
+}
+.info{
+    display: flex;
+    display: none;
+    animation: fade 2.5s;
+}
+@keyframes fade{
+    from{opacity: 0.2;}
+    to{opacity: 1;}
+}
+.image{
+    position: relative;
+    margin-left: 14rem;
+}
+.content h1{
+    font-size: 2rem;
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.content h3{
+    font-size: 2rem;
+    /* margin: 0%;
+    padding: 0%; */
+    opacity: 0.7;
+}
+.flex{
+
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="nav">
+            <ul>
+                <li id="h"><a href="index.html" >00 HOME</a></li>
+                <li  id="d"><a href="index2.html">01 DESTINATION</a> </li>
+                <li id="c"><a href="indexcrew.html" >02 CREW</a></li>
+                <li  id="t"><a href="indextech.html" >03 TECHNOLOGY</a></li>
+        </ul>
+           </div>
+           <div class="pick"><h2>02 MEET YOUR CREW</h2></div>
+           <div class="slider">
+            <div class="info" id="first">
+             <div class="flex">
+                 <div class="content"> 
+              <h3>  Flight Engineer</h3><br>
+             <h1> ANOUSHEH ANSARI</h1><br>
+
+ <P     id="main"> Anousheh Ansari is an Iranian American engineer and co-founder<br> of Prodea Systems. 
+  Ansari was the fourth self-funded space tourist,<br> the first self-funded woman to 
+  fly to the ISS,<br> and the first Iranian in space.</P> 
+</div> 
+        <div class="image">
+            <img src="image-anousheh-ansari.png" alt="">
+        </div></div> 
+            </div>
+            <div class="info" id="second">
+              <div class="flex">
+
+               <div class="content"> 
+                    <h3>    Pilot</h3><br>
+                   <h1>  Victor Glover</h1><br>
+      
+       <P     id="main"> Pilot on the first operational flight of the SpaceX Crew<br> Dragon to the 
+        International Space Station. Glover is a commander in the U.S.<br> Navy where 
+        he pilots an F/A-18.He was a crew member<br> of Expedition 64, and served as a 
+        station systems flight engineer. </P> 
+      </div> 
+              <div class="image">
+                  <img src="image-victor-glover.png" alt="">
+              </div> </div>
+                  </div>
+        <div class="info" id="third">
+        <div class="flex">  <div class="content"> 
+                <h3>       Commander</h3><br>
+               <h1> Douglas Hurley</h1><br>
+  
+   <P     id="main"> Douglas Gerald Hurley is an American engineer,<br> former Marine Corps pilot 
+    and former NASA astronaut.<br> He launched into space for the third time as 
+    commander of<br> Crew Dragon Demo-2. </P> 
+  </div> 
+          <div class="image">
+              <img src="image-douglas-hurley.png" alt="">
+          </div></div>  
+
+        </div>
+            
+           </div>
+    </div>       
+  <script>
+    let slideindex=0;
+    showslide();
+    function showslide(){
+        let i;
+        let slide=document.getElementsByClassName("info");
+        for(i=0;i<slide.length;i++){
+            slide[i].style.display="none";
+        }
+        slideindex++;
+        if(slideindex>slide.length){slideindex=1}
+        slide[slideindex-1].style.display="block";
+
+        setTimeout(showslide,4000);
+    }
+  </script>  
+</body>
+</html>
